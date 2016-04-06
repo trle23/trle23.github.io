@@ -1,56 +1,151 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Tracy Le</title>
-        
-        <style>
-            #navbar {
-                background-color:gray;
-                color:pink;
-            }
-            
-            #main {
-                background-color:white;
-            }
-            
-            body {
-                background-color:white;
-                color:black;
-            }
-            
-            h3 {
-                background-color:pink;
-            }
-            
-        </style>
-        
-    </head>
-    <body>
-        <div id="navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Tracy Le's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
+    
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("./img/home/south_sister.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
             </ul>
         </div>
-        
-        <div id="main">
-            <h1>Tracy Le</h1>
+        <div class="main-page">
+            <div class="image-container"></div>
             
-            <h3>Background Info</h3>
-            
-            <p>I was born in San Jose, California on August 23, 2001. I went to Slonaker Elemetary, then to Alpha: Blanca Alvarado Middle School. I currently go to <a target="_blank" href="http://www.alphapublicschools.org/our-schools/alpha-cindy-avitia-high-school/">Alpha: Cindy Avitia High School</a>. At Alpha: Cindy Avitia, I am a founding 9th grade student. Throughout middle school, I was an honor roll student.
-            </p>
-            
-            <h3>My Goals</h3>
-            
-            <p>I am striving to go to <a target="_blank" href="http://ucdavis.edu/">UC Davis</a>, which is my dream college/university. When I graduate, I want to be a high school guidance counselor.
-            </p>
-            
-        </div>
- 
-    </body>
-</html>
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Tracy Le's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">Born and raised in San Jose, CA. Went to Alpha: Blanca Alvarado Middle School. 
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">I currently attend Alpha: Cindy Avitia High School as a freshman. I am on the girls' school soccer team and I play defense.  
+            </div>
 
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
