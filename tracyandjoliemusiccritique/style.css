@@ -14,13 +14,13 @@
 
     .navbar-outside {
       display:block;
-      background-color: #313732;
+      background-color: #D8BFD8;
       height:80px;
     }
 
     .navbar {
       display:block;
-      background-color: #313732;
+      background-color: #87CEEB;
       height:80px;
       margin:0 auto;
       min-width:600px;
@@ -45,7 +45,7 @@
     }
     
     .active {
-        background-color: #4CAF50;
+        background-color: #D8BFD8;
         color: white;
     }
     /* END NAVBAR CSS */
@@ -55,7 +55,7 @@
       min-width:600px;
       max-width:800px;
       margin:0 auto;
-      background-color: #313732;
+      background-color: #D8BFD8;
       height:50px;
       clear:both;
     }
